@@ -9,7 +9,8 @@ git clone https://github.com/skidxjq/mock-server
 cd mock-server && npm install
 npm run mock
 ```
-
+and then open [Mock Manager](http://localhost:8080/interface/interface-admin/public/index.html)
+![Manager](imgs/screenshot.png)
 ## examples
 
 ### demo1
@@ -69,7 +70,8 @@ change current mock data via http://localhost:8080/interface-admin/public/index.
 
 ### demo3
 make a response based on the request parameters, such as check ```req.body``` or validate your parameters submitted from a html form
-how to do it 
+how to do it .
+see examples in data/m-demo-three.
 
 
 ## Advantages
@@ -79,3 +81,4 @@ how to do it
 
 ## Cautions
 - There are no ways to nest your APIs, you should relate  one ***api folder***  to  the specified  ***api name*** .
+- In this example, we defined the specified started with 'm-' matches those folders and apis, in your application, you could change or remove it on your own.
