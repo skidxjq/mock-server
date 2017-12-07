@@ -4,7 +4,7 @@ const cwd = process.cwd()
 const forceRequire = require('require-reload')
 // const delay = 0
 module.exports = function (router) {
-  router.use('/mock+', function (req, res, next) {
+  router.use('/m', function (req, res, next) {
     let interfacePath = resolveUrl(req)
     let Data
     if (fs.existsSync(interfacePath + '/index.js')) {
