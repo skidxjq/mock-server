@@ -38,6 +38,7 @@ class Interface {
   }
   getData (base, pathname) {
     var interfaceFilePath = path.resolve(base, './interface/' + pathname)
+
     var interfaceLocalFilePath = path.resolve(base, './local/' + pathname)
 
     var data = forceRequire(interfaceFilePath)
